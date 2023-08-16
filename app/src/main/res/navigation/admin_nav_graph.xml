@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/admin_dashboard_fragment">
+
+    <fragment
+        android:id="@+id/admin_dashboard_fragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.AdminDashboardFragment"
+        android:label="fragment_admin_dashboard_fragment">
+
+
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_admin_profile_fragment"
+            app:destination="@id/admin_profile_fragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_allEmpFragment"
+            app:destination="@id/allEmpFragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_adminHrDepartment"
+            app:destination="@id/adminHrDepartment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_webmailFragment"
+            app:destination="@id/webmailFragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_admin_project_fragment"
+            app:destination="@id/admin_project_fragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_allLeaveFragment"
+            app:destination="@id/allLeaveFragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_allEmpAttendenceFragment"
+            app:destination="@id/allEmpAttendenceFragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_operationFragment"
+            app:destination="@id/operationFragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_PHPFragment"
+            app:destination="@id/PHPFragment" />
+        <action
+            android:id="@+id/action_admin_dashboard_fragment_to_androidFragment"
+            app:destination="@id/androidFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_project_fragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.admin_project_fragment"
+        android:label="fragment_admin_project_fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/admin_profile_fragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.AdminProfileFragment"
+        android:label="fragment_admin_profile_fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminHrDepartment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.AdminHrDepartment"
+        android:label="fragment_admin_hr_department"
+        tools:layout="@layout/fragment_admin_hr_department" />
+    <fragment
+        android:id="@+id/androidFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.AndroidFragment"
+        android:label="fragment_android"
+        tools:layout="@layout/fragment_android" />
+    <fragment
+        android:id="@+id/PHPFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.PHPFragment"
+        android:label="fragment_p_h_p"
+        tools:layout="@layout/fragment_p_h_p" />
+    <fragment
+        android:id="@+id/operationFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.OperationFragment"
+        android:label="fragment_operation"
+        tools:layout="@layout/fragment_operation" />
+    <fragment
+        android:id="@+id/salesFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.salesFragment"
+        android:label="fragment_sales"
+        tools:layout="@layout/fragment_sales" />
+    <fragment
+        android:id="@+id/allEmpFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.AllEmpFragment"
+        android:label="fragment_all_emp"
+        tools:layout="@layout/fragment_all_emp" />
+    <fragment
+        android:id="@+id/allEmpAttendenceFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.AllEmpAttendenceFragment"
+        android:label="fragment_all_emp_attendence"
+        tools:layout="@layout/fragment_all_emp_attendence" />
+    <fragment
+        android:id="@+id/allLeaveFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.AllLeaveFragment"
+        android:label="fragment_all_leave"
+        tools:layout="@layout/fragment_all_leave" />
+    <fragment
+        android:id="@+id/webmailFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Admin.Fragment.WebmailFragment"
+        android:label="fragment_webmail"
+        tools:layout="@layout/fragment_webmail" />
+
+
+</navigation>

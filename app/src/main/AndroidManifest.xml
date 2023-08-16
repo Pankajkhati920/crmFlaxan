@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/flaxen"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/flaxen"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlaxenCRM"
+        tools:targetApi="31">
+        <activity
+            android:name=".Sales.Views.Activities.SalesAddMeetingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesProposalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesLeadsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Android.Activities.MeetingAndroidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.WebMailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Android.Activities.AndroidTask"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesMeetingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Android.Activities.AddTaskAndroidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Android.Activities.TodayTaskAndroidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Android.Activities.AndroidProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HR.Activities.HRprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HR.Activities.HRHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Activities.AdminProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesKiProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesUpcomingProjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Sales.Views.Activities.SalesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Activities.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Android.Activities.AndroidActivity"
+            android:exported="false" />
+        <activity android:name=".Sales.Views.Activities.AddReportSalesActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

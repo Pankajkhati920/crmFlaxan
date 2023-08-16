@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:id="@+id/dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/dashboard"/>
+
+        <item android:id="@+id/client"
+            android:title="Client"
+            android:icon="@drawable/folder"/>
+
+        <item android:id="@+id/new_client"
+            android:title="New Client"
+            android:icon="@drawable/user"/>
+
+        <item android:id="@+id/project"
+            android:title="Proposal"
+            android:icon="@drawable/project"/>
+
+        <item android:id="@+id/call_leads"
+            android:title="Call Leads"
+            android:icon="@drawable/message"/>
+
+        <item android:id="@+id/all_Leave"
+            android:title="All Leave"
+            android:icon="@drawable/calendar"/>
+
+        <item android:id="@+id/apply_for_leave"
+            android:title="Apply for Leave"
+            android:icon="@drawable/calendar"/>
+
+        <!--<item android:id="@+id/vacation"
+            android:title="Vacations"
+            android:icon="@drawable/vacation"/>-->
+
+        <item android:id="@+id/quries_sales"
+            android:title="Queries"
+            android:icon="@drawable/message"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out"
+            android:icon="@drawable/logout"/>
+
+
+</menu>

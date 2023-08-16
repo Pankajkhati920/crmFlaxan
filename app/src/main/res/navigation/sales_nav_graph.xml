@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sales_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_salesProfileFragment"
+            app:destination="@id/salesProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_salesDashboardFragment"
+            app:destination="@id/salesDashboardFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_clientFragment"
+            app:destination="@id/clientFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newClientFragment"
+            app:destination="@id/newClientFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_leaveFragment"
+            app:destination="@id/leaveFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allLeadsFragment"
+            app:destination="@id/allLeadsFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_salesApplyLeaveFragment"
+            app:destination="@id/salesApplyLeaveFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/salesProfileFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.SalesProfileFragment"
+        android:label="fragment_sales_profile"
+        tools:layout="@layout/fragment_sales_profile" />
+    <fragment
+        android:id="@+id/salesDashboardFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.SalesDashboardFragment"
+        android:label="SalesDashboardFragment" >
+        <action
+            android:id="@+id/action_salesDashboardFragment_to_myAttendanceFragment"
+            app:destination="@id/myAttendanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.SalesClientFragment"
+        android:label="clientFragment" />
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.SalesProjectFragment"
+        android:label="projectFragment" />
+    <fragment
+        android:id="@+id/newClientFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.NewClientFragment"
+        android:label="NewClientFragment" />
+    <fragment
+        android:id="@+id/leaveFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.LeaveFragment"
+        android:label="fragment_leave"
+        tools:layout="@layout/fragment_leave" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/allLeadsFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.AllLeadsFragment"
+        android:label="fragment_all_leads"
+        tools:layout="@layout/fragment_all_leads" />
+    <fragment
+        android:id="@+id/salesApplyLeaveFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.SalesApplyLeaveFragment"
+        android:label="SalesApplyLeaveFragment" />
+    <fragment
+        android:id="@+id/myAttendanceFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Sales.Views.Fragment.SalesAttendanceFragment"
+        android:label="MyAttendanceFragment" />
+
+</navigation>

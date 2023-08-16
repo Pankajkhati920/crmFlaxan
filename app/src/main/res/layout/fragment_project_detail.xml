@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Android.Fragment.ProjectDetailFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:context=".views.AppointmentDetailsScreen">
+
+            <include
+                android:id="@+id/tlAppointmentDetails"
+                layout="@layout/constant_toolbar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/lnCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/project_card_bg"
+                        android:backgroundTint="@color/sky_blue"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:weightSum="10"
+                        tools:ignore="MissingConstraints">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/project_card_bg"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/ImgCustomer"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/user"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/TxtLawyerName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/roboto_medium"
+                                android:maxEms="15"
+                                android:maxLines="1"
+                                android:text="Rajesh K S"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/ImgCustomer"
+                                app:layout_constraintTop_toTopOf="@+id/ImgCustomer" />
+
+                            <TextView
+                                android:id="@+id/TxtQlf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+
+                                android:layout_marginTop="1dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/roboto_medium"
+                                android:maxEms="15"
+                                android:maxLines="1"
+                                android:text="Arbitration, Cheque bounce case"
+                                android:textColor="#3F434A"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/ImgCustomer"
+                                app:layout_constraintTop_toBottomOf="@+id/TxtLawyerName"
+
+
+                                />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="12dp">
+
+                            <TextView
+                                android:id="@+id/txtDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Start Date - 27/02/2023"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toEndOf="@+id/ImgClock_"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txtTimeSlot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="End Date - 27/02/2023"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imgClock_"
+                                app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+                            <TextView
+                                android:id="@+id/txtUpComing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Upcoming"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/txtDate"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/txtDate"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                            <ImageView
+                                android:id="@+id/ImgClock_"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginStart="16dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/txtDate"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/txtDate"
+                                app:srcCompat="@drawable/clock"
+                                app:tint="@color/black" />
+
+                            <ImageView
+                                android:id="@+id/imgClock_"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginStart="16dp"
+                                app:layout_constraintBottom_toBottomOf="@+id/txtTimeSlot"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/txtTimeSlot"
+                                app:srcCompat="@drawable/clock"
+                                app:tint="@color/black" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintTop_toBottomOf="@id/lnCard"
+                        android:text="Download Proposal"
+                        android:gravity="center"
+                        android:fontFamily="@font/josefinsans_bold"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/pdficonnnn"
+                        app:layout_constraintTop_toBottomOf="@id/textview"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="140dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

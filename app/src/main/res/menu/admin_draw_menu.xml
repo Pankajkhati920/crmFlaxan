@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard"/>
+
+    <group>
+
+        <item android:id="@+id/operation"
+            android:title="Operation Department"
+            android:icon="@drawable/user"/>
+
+        <item android:id="@+id/hr_department"
+            android:title="HR Department"
+            android:icon="@drawable/user"/>
+
+        <item android:id="@+id/sales"
+            android:title="Sales Department"
+            android:icon="@drawable/user"/>
+
+        <item android:id="@+id/android"
+            android:title="Android Department"
+            android:icon="@drawable/user"/>
+
+        <item android:id="@+id/php_department"
+            android:title="PHP Department"
+            android:icon="@drawable/user"/>
+
+    </group>
+    <group>
+
+
+        <item android:id="@+id/calender"
+            android:title="Calendar"
+            android:icon="@drawable/calendar"/>
+
+        <item android:id="@+id/leave"
+            android:title="Leave"
+            android:icon="@drawable/vacation"/>
+
+        <item android:id="@+id/info"
+            android:title="Info Portal"
+            android:icon="@drawable/folder"/>
+
+    </group>
+
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        android:icon="@drawable/logout"/>
+
+</menu>

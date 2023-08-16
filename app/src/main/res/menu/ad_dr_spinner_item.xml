@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/hr_department"
+        android:title="HR Department"
+        android:icon="@drawable/folder"/>
+
+    <item android:id="@+id/sales"
+        android:title="Sales Department"
+        android:icon="@drawable/folder"/>
+
+    <item android:id="@+id/operation"
+        android:title="Operatrion"
+        android:icon="@drawable/folder"/>
+
+    <item android:id="@+id/android"
+        android:title="Android /Flutter"
+        android:icon="@drawable/folder"/>
+
+    <item android:id="@+id/php_department"
+        android:title="PHP Department"
+        android:icon="@drawable/folder"/>
+
+</menu>

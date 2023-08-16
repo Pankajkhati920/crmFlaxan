@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.HomeFragmentAndroid"
+        android:label="HomeFragmentAndroid" >
+
+
+        <action
+            android:id="@+id/action_homeFragment_to_androidDashboardFragment"
+            app:destination="@id/androidDashboardFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allteamFragment"
+            app:destination="@id/allteamFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_allprojectandroidFragment"
+            app:destination="@id/allprojectandroidFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_attendanceFragment"
+            app:destination="@id/attendanceFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_leaveFragment"
+            app:destination="@id/leaveFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_applyleaveandroidFragment"
+            app:destination="@id/applyleaveandroidFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_upcomingprojectandroidandroidFragment"
+            app:destination="@id/upcomingprojectandroidFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_pendingprojectandroidandroidFragment"
+            app:destination="@id/pendingprojectandroidFragment" />
+
+
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/homeFragmentAndroid"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.HomeFragmentAndroid"
+        android:label="HomeFragmentAndroid" />
+    <fragment
+        android:id="@+id/androidDashboardFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.AndroidDashboardFragment"
+        android:label="AndroidDashboardFragment" >
+        <action
+            android:id="@+id/action_androidDashboardFragment_to_applyleaveandroidFragment"
+            app:destination="@id/applyleaveandroidFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/allprojectandroidFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.AllprojectAndroidFragment"
+        android:label="AllprojectAndroidFragment" >
+
+        <action
+            android:id="@+id/action_allprojectandroidFragment_to_projectDetailFragment"
+            app:destination="@id/projectDetailFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/allteamFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.AllTeamFragment"
+        android:label="AllTeamFragment" />
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.AttendanceFragment"
+        android:label="AttendanceFragment" />
+
+    <fragment
+        android:id="@+id/leaveFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.LeaveAndroidFragment"
+        android:label="LeaveFragment" />
+
+    <fragment
+        android:id="@+id/applyleaveandroidFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.ApplyLeaveAndroidFragment"
+        android:label="ApplyLeaveAndroidFragment" />
+
+    <fragment
+        android:id="@+id/upcomingprojectandroidFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.UpcomingProjectAndroidFragment"
+        android:label="UpcomingProjectAndroidFragment" />
+
+    <fragment
+        android:id="@+id/pendingprojectandroidFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.PendingProjectAndroidFragment"
+        android:label="PendingProjectsAndroidFragment" />
+
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.flaxeninfosoft.flaxencrm.Android.Fragment.ProjectDetailFragment"
+        android:label="ProjectDetailFragment" />
+
+
+
+
+</navigation>

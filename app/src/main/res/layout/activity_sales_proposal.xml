@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/background_color"
+        android:layout_height="match_parent"
+        tools:context=".Sales.Views.Activities.SalesProposalActivity">
+
+        <include
+            android:id="@+id/tlAppointmentDetails"
+            layout="@layout/constant_toolbar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/greywhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlAppointmentDetails">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView19"
+                                        android:layout_width="37dp"
+                                        android:layout_height="27dp"
+                                        android:layout_marginLeft="20dp"
+                                        app:srcCompat="@drawable/ic_baseline_assignment_24" />
+
+                                    <TextView
+                                        android:id="@+id/uploadtext"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="UPLOAD PROPOSAL"
+                                        android:textSize="17sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView40"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00FFFFFF"
+                                    android:fontFamily="@font/aclonica"
+                                    android:padding="10dp"
+                                    android:text="**ONLY PDF IS ACCEPTABLE"
+                                    android:textColor="#FF0000"
+                                    android:textSize="8sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:foregroundGravity="center_vertical|clip_horizontal|center"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.card.MaterialCardView
+                                        android:id="@+id/selectpr"
+                                        android:layout_width="100dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:layout_marginRight="8dp"
+                                        android:elevation="10dp"
+                                        app:cardCornerRadius="5dp"
+                                        app:cardElevation="5dp"
+                                        app:cardForegroundColor="#8019B400">
+
+                                        <TextView
+                                            android:id="@+id/textView4444"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="9dp"
+                                            android:fontFamily="@font/aclonica"
+                                            android:gravity="center|clip_vertical|center_horizontal"
+                                            android:text="SELECT FILE"
+                                            android:textColor="#2E9E40"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold" />
+
+                                    </com.google.android.material.card.MaterialCardView>
+
+                                    <com.google.android.material.card.MaterialCardView
+                                        android:id="@+id/uploadpr"
+                                        android:layout_width="100dp"
+                                        android:layout_height="35dp"
+                                        android:elevation="10dp"
+                                        app:cardBackgroundColor="#A4D0F3"
+                                        app:cardCornerRadius="5dp"
+                                        app:cardElevation="5dp">
+
+                                        <TextView
+                                            android:id="@+id/textView36"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="9dp"
+                                            android:fontFamily="@font/aclonica"
+                                            android:gravity="center|clip_vertical|center_horizontal"
+                                            android:text="UPLOAD FILE"
+                                            android:textColor="#3F51B5"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold" />
+                                    </com.google.android.material.card.MaterialCardView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardElevation="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView12">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLICK HERE TO VIEW PDF"
+                    android:textColor="#F85A6C"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal">
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="232dp"
+                    android:layout_height="219dp"
+                    android:layout_marginTop="60dp"
+                    android:clickable="true"
+                    android:elevation="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    android:layout_marginBottom="10dp"
+                    app:srcCompat="@drawable/pdficonnnn" />
+            </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

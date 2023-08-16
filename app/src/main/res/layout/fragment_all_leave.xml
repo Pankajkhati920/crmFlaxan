@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_stroke">
+
+                    <RelativeLayout
+                        android:id="@+id/rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/from_textview_b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/edittext_bg"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:hint="25-07-2023"
+                                android:paddingStart="40dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="40dp"
+                                android:paddingBottom="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/center_icon_b"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/baseline_arrow_right_alt_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/to_textview_b"
+                                app:layout_constraintStart_toEndOf="@id/from_textview_b"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/to_textview_b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/edittext_bg"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:hint="30-05-2023"
+                                android:paddingStart="40dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="40dp"
+                                android:paddingBottom="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel1"
+                        android:layout_below="@id/rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_below="@id/dateandtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reason / Subject"
+                            android:background="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="19sp"
+                            android:textColor="@color/black"
+                            tools:ignore="NotSibling" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dateandtime"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="21dp"
+                            android:background="@drawable/bg_text_btn_blue_stroke"
+                            android:text="Sick Leave"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="5dp"
+                            android:textColorHint="@color/sky_blue"
+                            tools:ignore="NotSibling" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_below="@id/rel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_bg"
+                            android:text="It is a long established fact that a reader."
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_stroke">
+
+                    <LinearLayout
+                        android:id="@+id/rel_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/from_textvie_c"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/edittext_bg"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:hint="25-07-2023"
+                                android:paddingStart="40dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="40dp"
+                                android:paddingBottom="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/center_icon_c"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/baseline_arrow_right_alt_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/to_textview_c"
+                                app:layout_constraintStart_toEndOf="@id/from_textvie_c"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/to_textview_c"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/edittext_bg"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:hint="30-05-2023"
+                                android:paddingStart="40dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="40dp"
+                                android:paddingBottom="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_a"
+                        android:layout_below="@id/rel_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_below="@id/dateandtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reason / Subject"
+                            android:background="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="19sp"
+                            android:textColor="@color/black"
+                            tools:ignore="NotSibling" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dateandtime"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="21dp"
+                            android:background="@drawable/bg_text_btn_blue_stroke"
+                            android:text="Casual Leave"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="5dp"
+                            android:textColorHint="@color/sky_blue"
+                            tools:ignore="NotSibling" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_a"
+                        android:layout_below="@id/rel_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_bg"
+                            android:text="It is a long established fact that a reader."
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</layout>

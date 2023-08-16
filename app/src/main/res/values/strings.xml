@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Flaxen CRM</string>
+    <string name="login">Sign In</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="please_enter_your_email">Email Address</string>
+    <string name="please_enter_your_password">Password</string>
+    <string name="continue1">Continue</string>
+    <string name="hello_blank_fragment">Hello Blank Fragment</string>
+
+    <string-array name="Department">
+        <item>Select Department</item>
+        <item>Digital Marketing</item>
+        <item>Development</item>
+        <item>Design</item>
+    </string-array>
+    <string-array name="sort_by">
+        <item>Filter</item>
+        <item>Sort by: Date</item>
+        <item>Sort by: Status</item>
+        <item>Date range</item>
+        <item>Android APP Development</item>
+
+    </string-array>
+    <string-array name="Leave">
+        <item>Select Leave Type</item>
+        <item>Full Day</item>
+        <item>Half Day</item>
+        <item>Early leaving</item>
+        <item>Late Coming</item>
+        <item>Sick Leave</item>
+        <item>Casual Leave</item>
+    </string-array>
+
+    <string-array name="Select">
+        <item>Deal Done</item>
+        <item>NPC</item>
+        <item>Not Interested</item>
+        <item>Follow Up</item>
+        <item>Switch Off</item>
+    </string-array>
+
+    <string-array name="SelectAndroid">
+        <item>Task Done</item>
+        <item>Pending</item>
+        <item>Not Completed</item>
+
+    </string-array>
+    <string-array name="Gender">
+
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="Spinner_items_city">
+
+        <item> Select city</item>
+        <item>Indore</item>
+        <item>Bombay</item>
+        <item>Pune</item>
+
+    </string-array>
+
+
+
+</resources>
